@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+  background-color: #d7cec7;
+}
+.navbar{
+    background-color: #C09F80;
+    border-bottom: 2px solid #565656;
+    z-index: 0;
+}
+
+hr{
+    background-color: #565656;
+}
+
+#navbarMenu{
+    margin: auto;
+    background-color: #C09F80;
+}
+
+.navBtn:hover{
+    background-color: #D7CEC7;
+}
+
+#portfolio{
+    padding: 24px;
+}
+.carousel   {
+    border: 5px solid #565656;
+}
+
+
+
+.footer{
+    background-color: #C09F80;
+    border-top: 2px solid #565656;
+    padding: 5px;
+}
+
+/* light grey  #D7CEC7*/
+/* dark grey #565656 */
+/* red #76323F */
+/* tan #C09F80 */

@@ -1,0 +1,24 @@
+{
+  "name": "jhughes",
+  "version": "1.0.0",
+  "description": "My portfolio.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughesrva/jhughes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hughesrva/jhughes/issues"
+  },
+  "homepage": "https://github.com/hughesrva/jhughes#readme",
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "bulma-carousel": "^3.0.0",
+    "bulma-divider": "^2.0.1"
+  }
+}

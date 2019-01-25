@@ -1,20 +1,244 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html class="has-navbar-fixed-top">
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Jacob Hughes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-    <script src="./assets/js/main.js"></script>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./node_modules/bulma/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./node_modules/bulma-carousel/dist/css/bulma-carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./node_modules/bulma-divider/dist/css/bulma-divider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- header -->
+    <nav
+      class="navbar is-fixed-top has-text-centered"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand navbar-start">
+        <h1 class="title">Jacob Hughes</h1>
+
+        <!-- hamburger menu -->
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarMenu"
+        >
+          <span aria-hidden="true"></span> <span aria-hidden="true"></span
+          ><span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu navbar-end" id="navbarMenu">
+        <a class="navbar-item is-large" href="#about">About</a>
+        <a class="navbar-item is-large" href="#portfolioLine">Portfolio</a>
+        <a class="navbar-item is-large" href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- allows centering of all content -->
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <!-- about -->
+        <div class="section" id="about">
+          <div class="container is-fluid" id="aboutContainer">
+            <div class="content">
+              <h1 class="title has-text-centered">About</h1>
+            </div>
+          </div>
+        </div>
+
+        <hr id="portfolioLine" />
+
+        <!-- portfolio -->
+        <div class="section" id="portfolio">
+          <div class="container is-fluid" id="portContainer">
+            <div class="content">
+              <h1 class="title has-text-centered">Projects</h1>
+            </div>
+
+            <!-- carousel box -->
+            <div class="carousel carousel-animated carousel-animate-slide">
+              <div class="carousel-container">
+                <div class="carousel-item has-background is-active">
+                  <!-- slide item -->
+                  <a href="https://hughesrva.github.io/socialscape/">
+                    <img
+                      class="is-background"
+                      src="./assets/images/socialscape.png"
+                      alt="Socialscape"
+                      width="1017"
+                      height="671"
+                    />
+                  </a>
+                  <div class="title">
+                    <a href="https://hughesrva.github.io/socialscape/">
+                      Socialscape - Personalized Event Finder
+                    </a>
+                    |
+                    <a href="https://github.com/hughesrva/socialscape">
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item has-background">
+                  <!-- slide item -->
+                  <a href="https://hughesrva.github.io/gifhub/">
+                    <img
+                      class="is-background"
+                      src="./assets/images/gifhub.png"
+                      alt="Gifhub"
+                      width="1017"
+                      height="671"
+                    />
+                  </a>
+                  <div class="title">
+                    <a href="https://hughesrva.github.io/gifhub/">
+                      Gifhub - Gif-driven Productivity Tool
+                    </a>
+                    | <a href="https://github.com/hughesrva/gifhub">GitHub</a>
+                  </div>
+                </div>
+                <div class="carousel-item has-background image is-1000x562.50">
+                  <!-- slide item -->
+                  <a href="https://hughesrva.github.io/train-schedule">
+                    <img
+                      class="is-background"
+                      src="./assets/images/train.png"
+                      alt="Train Schedule"
+                      width="1017"
+                      height="671"
+                    />
+                  </a>
+                  <div class="title">
+                    <a href="https://hughesrva.github.io/train-schedule"></a>Multi-User Train Schedule</a> | <a href="https://github.com/hughesrva/train-schedule">GitHub</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-navigation is-overlay">
+                <div class="carousel-nav-left">
+                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="carousel-nav-right">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- contact -->
+        <div class="section" id="contact">
+          <div class="container is-fluid" id="contactContainer">
+            <div class="content">
+              <h1 class="title has-text-centered">Contact</h1>
+            </div>
+
+            <div class="columns is-centered">
+              <div class="column is-four-fifths ">
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">From</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Name" />
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control has-icons-left has-icons-right">
+                        <input
+                          class="input"
+                          type="email"
+                          placeholder="Email Address"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Your Message</label>
+                  <div class="control">
+                    <textarea class="textarea"></textarea>
+                  </div>
+                </div>
+
+                <div class="field is-grouped is-pulled-right">
+                  <div class="control">
+                    <button class="button is-link">Send</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-text">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong
+            >Made by<a href="https://hughesrva.github.io/jhughes/">
+              Jacob Hughes</a
+            ></strong
+          >.
+        </p>
+      </div>
+    </footer>
 
     <!-- links -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
