@@ -4,6 +4,7 @@
   "description": "My portfolio.",
   "main": "index.html",
   "scripts": {
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
