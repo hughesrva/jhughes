@@ -21,4 +21,8 @@
     "bulma-carousel": "^3.0.0",
     "bulma-divider": "^2.0.1"
   }
+  "engines": {
+    "node": "11.8.0",
+    "npm": "6.7.0"
+  }
 }
