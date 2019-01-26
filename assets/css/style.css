@@ -21,6 +21,9 @@ hr{
     background-color: #D7CEC7;
 }
 
+.sectionTitle{
+    margin: 42px 0 0 0;
+}
 #portfolio{
     padding: 24px;
 }
