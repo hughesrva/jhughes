@@ -12,4 +12,5 @@ $(document).ready(function() {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
   });
+  var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
 });
