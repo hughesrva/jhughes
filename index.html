@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
     <link
@@ -17,11 +17,12 @@
       media="screen"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
     />
+
     <link
       rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="https://github.com/Wikiki/bulma-carousel/blob/master/dist/css/bulma-carousel.min.css"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -38,36 +39,37 @@
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand navbar-start">
-        <h1 class="title">Jacob Hughes</h1>
-
-        <!-- hamburger menu -->
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarMenu"
-        >
+      <div class="navbar-brand">
+        <h1 class="title navbar-item">Jacob Hughes</h1>
           <span aria-hidden="true"></span> <span aria-hidden="true"></span
           ><span aria-hidden="true"></span>
         </a>
       </div>
 
       <div class="navbar-menu navbar-end" id="navbarMenu">
-        <a class="navbar-item is-large" href="#about">About</a>
+        <a class="navbar-item is-large" href="#top">About</a>
         <a class="navbar-item is-large" href="#portfolioLine">Portfolio</a>
       </div>
     </nav>
 
     <!-- allows centering of all content -->
-    <div class="columns is-centered">
+    <div class="columns is-centered" id="top">
       <div class="column is-two-thirds">
         <!-- about -->
         <div class="section" id="about">
           <div class="container is-fluid" id="aboutContainer">
-            <div class="content">
-              <h1 class="title sectionTitle has-text-centered">About</h1>
+
+            <div class="container is-fluid is-clearfix">
+              <figure class="image is-pulled-left">
+                <img src="assets/images/profile.jpg" id="mePic" />
+              </figure>
+              <div class="content">
+                <h1 class="aboutText">Hey, I'm Jacob.</h1>
+                <br>
+                <h4 class="aboutText">I'm an aspiring full-stack web developer with a focus on a clean aesthetic and intuitive design.</h4>
+                <h4 class="aboutText">If you want to learn more, check out my <a href="https://github.com/hughesrva">GitHub <i class="fab fa-github"></i></a>, my <a href="assets/images/resume.pdf">resume</a> or let's connect on <a href="https://www.linkedin.com/in/-jacobhughes/">Linked<i class="fab fa-linkedin-in"></i></a>.</h4>
+                <h4 class="aboutText">Interested in working together? Email me at <strong>hughesrva@gmail.com</strong> or shoot me a text at <strong>804-892-7905</strong> and let's make something great.</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -82,71 +84,72 @@
             </div>
 
             <!-- carousel box -->
-            <div class="carousel carousel-animated carousel-animate-slide">
-              <div class="carousel-container">
-                <div class="carousel-item has-background is-active">
-                  <!-- slide item -->
-                  <a href="https://hughesrva.github.io/socialscape/">
-                    <img
-                      class="is-background"
-                      src="./assets/images/socialscape.png"
-                      alt="Socialscape"
-                      width="1017"
-                      height="671"
-                    />
-                  </a>
-                  <div class="title">
-                    <a href="https://hughesrva.github.io/socialscape/">
-                      Socialscape - Personalized Event Finder
-                    </a>
-                    |
-                    <a href="https://github.com/hughesrva/socialscape">
-                      GitHub
-                    </a>
+            <div class="carousel slide" data-ride="carousel" id="portCarousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="https://hughesrva.github.io/socialscape/"
+                    ><img class="d-block" src="assets/images/socialscape.png"
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <a href="https://hughesrva.github.io/socialscape/"
+                      ><h3>Socialscape - Personalized Event Finder</h3></a
+                    >
+                    <a href="https://github.com/hughesrva/socialscape"
+                      ><h3>GitHub</h3></a
+                    >
                   </div>
                 </div>
-                <div class="carousel-item has-background">
-                  <!-- slide item -->
-                  <a href="https://hughesrva.github.io/gifhub/">
-                    <img
-                      class="is-background"
-                      src="./assets/images/gifhub.png"
-                      alt="Gifhub"
-                      width="1017"
-                      height="671"
-                    />
-                  </a>
-                  <div class="title">
-                    <a href="https://hughesrva.github.io/gifhub/">
-                      Gifhub - Gif-driven Productivity Tool
-                    </a>
-                    | <a href="https://github.com/hughesrva/gifhub">GitHub</a>
+                <div class="carousel-item">
+                  <a href="https://hughesrva.github.io/gifhub/"
+                    ><img class="d-block" src="assets/images/gifhub.png"
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <a href="https://hughesrva.github.io/gifhub/"
+                      ><h3>Gifhub - Gif-driven Productivity Tool</h3></a
+                    >
+                    <a href="https://github.com/hughesrva/gifhub"
+                      ><h3>GitHub</h3></a
+                    >
                   </div>
                 </div>
-                <div class="carousel-item has-background image is-1000x562.50">
-                  <!-- slide item -->
-                  <a href="https://hughesrva.github.io/train-schedule">
-                    <img
-                      class="is-background"
-                      src="./assets/images/train.png"
-                      alt="Train Schedule"
-                      width="1017"
-                      height="671"
-                    />
-                  </a>
-                  <div class="title">
-                    <a href="https://hughesrva.github.io/train-schedule"></a>Multi-User Train Schedule</a> | <a href="https://github.com/hughesrva/train-schedule">GitHub</a>
+                <div class="carousel-item">
+                  <a href="https://hughesrva.github.io/train-schedule"
+                    ><img class="d-block" src="assets/images/train.png"
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <a href="https://hughesrva.github.io/train-schedule"
+                      ><h3>Multi-User Train Schedule</h3></a
+                    >
+                    <a href="https://github.com/hughesrva/train-schedule"
+                      ><h3>GitHub</h3></a
+                    >
                   </div>
                 </div>
               </div>
-              <div class="carousel-navigation is-overlay">
-                <div class="carousel-nav-left">
-                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                </div>
-                <div class="carousel-nav-right">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-              </div>
+              <a
+                class="carousel-control-prev"
+                href="#portCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#portCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </div>
@@ -167,12 +170,22 @@
     </footer>
 
     <!-- links -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="https://wikiki.github.io/node_modules/bulma-extensions/bulma-carousel/dist/js/bulma-carousel.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
